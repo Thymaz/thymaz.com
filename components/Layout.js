@@ -19,6 +19,8 @@ const GlobalStyles = createGlobalStyle`
       props.theme.fontFamily}, Arial, Helvetica, sans-serif;
     color: ${(props) => props.theme.primaryColor};
     background-color: ${(props) => props.theme.backgroundColor};
+    background-image: url("https://www.transparenttextures.com/patterns/worn-dots.png");
+
   }
   a {
     text-decoration: none;

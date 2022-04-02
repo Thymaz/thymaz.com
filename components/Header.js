@@ -6,10 +6,25 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 
 const Container = styled.div`
-  margin-top: 80px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("/background.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: ${(props) => props.theme.secondaryColor};
+  ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 80px);
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
 `;
 
 const Navigation = styled.div`
@@ -17,7 +32,7 @@ const Navigation = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-top: 60px;
+  margin-top: 0px;
   z-index: 20;
   @media only screen and (max-width: 600px) {
     display: ${(props) => (props.hidden ? "none" : "flex")};
@@ -62,7 +77,7 @@ const A = styled.a`
   font-size: 14px;
   cursor: pointer;
   position: relative;
-  color: ${(props) => props.theme.primaryColor};
+  color: ${(props) => props.theme.secondaryColor};
   &:after {
     content: "";
     position: absolute;
@@ -82,8 +97,8 @@ const A = styled.a`
 `;
 
 const Img = styled.img`
-  width: 500px;
-
+  width: 300px;
+  z-index: 2;
   @media only screen and (max-width: 600px) {
     width: 300px;
   }
@@ -109,7 +124,7 @@ const Header = ({ refs }) => {
   return (
     <Container>
       <Link href="/">
-        <Img src="/logo.svg" alt="logo" />
+        <Img src="/logo.png" alt="logo" />
       </Link>
       <BarsMenu onClick={() => setHidden(hidden ? false : true)}>
         <FontAwesomeIcon height="32px" width="32px" icon={faBars} />

@@ -27,9 +27,9 @@ const SEO = {
 };
 
 const theme = {
-  fontFamily: "Roboto",
+  fontFamily: "Montserrat, sans-serif",
   linkColor: "#000000",
-  primaryColor: "#2e3d36",
+  primaryColor: "#000000",
   primaryGradient:
     "linear-gradient(104.29deg, #3e4390 -13.54%, #7B588D 353.63%)",
   secondaryColor: "#F2F2F2",
@@ -41,7 +41,7 @@ const theme = {
 const config = {
   headerSize: "70px",
   footerSize: "70px",
-  artistName: "Maazel",
+  artistName: "Thymaz",
   tagline: "Creating emotional music",
   actionButtonLabel: "Listen Now",
   actionButtonUrl: "https://fanlink.to/l2ma",
@@ -55,7 +55,7 @@ const config = {
   SEO: SEO,
   theme: theme,
   links: {
-    facebook: "https://www.facebook.com/maazelbeats",
+    facebook: "https://www.facebook.com/thymaz",
     twitter: "https://twitter.com/maazelbeats",
     youtube: "https://www.youtube.com/channel/UCgrx0pyWluVXzOy45yWRJTw",
     instagram: "https://www.instagram.com/maazelbeats/",
