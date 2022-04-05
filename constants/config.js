@@ -46,7 +46,7 @@ const config = {
   actionButtonLabel: "Listen Now",
   actionButtonUrl: "https://linktr.ee/thymaz",
   backgroundUrl: "background.jpg",
-  bioPicture1: "bioPic1.png",
+  bioPicture1: "bioPic1.jpg",
   bioPicture2: "bioPic2.jpg",
   logoUrl: "logo.svg",
   reversedContactMail: "moc.liamg@cisumzamyht",
