@@ -162,10 +162,10 @@ const Home = () => {
         <Bio>{biography}</Bio>
         <Pictures>
           <LazyLoad style={Pictures}>
-            <BioImg src={config.bioPicture1} alt="Maazel press picture" />
+            <BioImg src={config.bioPicture1} alt="Thymaz press picture" />
           </LazyLoad>
           <LazyLoad style={Pictures}>
-            <BioImg src={config.bioPicture2} alt="Maazel press picture" />
+            <BioImg src={config.bioPicture2} alt="Thymaz press picture" />
           </LazyLoad>
         </Pictures>
         <ContactMe
