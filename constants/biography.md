@@ -1,3 +1,10 @@
+**Thymaz** is a French producer from Paris. He began to play violin and piano while he was learning music in his youth. His love of composing and creating have given rise to this project to release his **own music**.
+He makes **electronic music, inspired by ambient sound, pop and house music** trying to make people dance or chill out.
+
+
+
+
+
 Behind **Maazel** lies a Paris-based **genre-bending/multi-instrumentalist producer** that started the project in 2015, mainly focusing on making **emotional electronic music**. His experience in guitar enabled him to break the boundaries of genres and allowed him to develop his **unique** and **recognizable style**.
 
 Weaving in and out of **future bass** and **chill music**, he started releasing his first originals and remixes on Soundcloud and caught the attention of big names. It ended up in collaborations such as **‘Lost Boys’** that generated more than **4 million plays** and became an **anthem** of the genre. Things snowballed quickly with huge names (such as **Diplo**, **Marshmello** and **Party Favor**) playing the track in the **biggest festivals in the world**.

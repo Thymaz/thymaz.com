@@ -118,12 +118,12 @@ const BarsMenu = styled.div`
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 30);
 
 const Header = ({ refs }) => {
-  const navigationList = ["releases", "about", "contact"];
+  const navigationList = ["home", "music","about", "shop"];
   const [hidden, setHidden] = useState(true);
 
   return (
     <Container>
-      <Link href="/">
+      <Link id="home" href="/">
         <Img src="/logo.png" alt="logo" />
       </Link>
       <BarsMenu onClick={() => setHidden(hidden ? false : true)}>

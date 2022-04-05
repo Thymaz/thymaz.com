@@ -1,27 +1,27 @@
 const SEO = {
   description:
     "Behind Maazel lies a Paris based genre bending/multi-instrumentalist producer and DJ, mainly focusing on making emotional electronic music.",
-  titleTemplate: "Maazel - Electronic music producer",
+  titleTemplate: "Thymaz | Official Website",
   additionalMetaTags: "",
   openGraph: {
     // what's displayed on social networks when sharing the website
-    title: "Maazel - Creating Emotional Music",
+    title: "Thymaz | Official Website",
     type: "website",
     url: "https://maazelmusic.com/",
-    site_name: "Maazel Music",
+    site_name: "Thymaz",
     locale: "en_US",
     images: [
       {
-        url: "http://maazelmusic.com/og-image.jpg",
+        url: "http://thymaz.com/Press_Pic1.png",
         width: 800,
         height: 600,
-        alt: "Maazel",
+        alt: "Thymaz",
       },
     ],
   },
   twitter: {
-    handle: "@maazelmusic",
-    site: "@maazelmusic",
+    handle: "@thymazoff",
+    site: "@thymaz",
     cardType: "summary_large_image",
   },
 };
@@ -44,25 +44,25 @@ const config = {
   artistName: "Thymaz",
   tagline: "Creating emotional music",
   actionButtonLabel: "Listen Now",
-  actionButtonUrl: "https://fanlink.to/l2ma",
+  actionButtonUrl: "https://linktr.ee/thymaz",
   backgroundUrl: "background.jpg",
-  bioPicture1: "bioPic1.jpg",
+  bioPicture1: "bioPic1.png",
   bioPicture2: "bioPic2.jpg",
   logoUrl: "logo.svg",
-  reversedContactMail: "moc.cisumlezaam@tcatnoc",
-  htmlTitle: "Maazel",
-  websiteUrl: "https://maazelmusic.com/",
+  reversedContactMail: "moc.liamg@cisumzamyht",
+  htmlTitle: "Thymaz",
+  websiteUrl: "https://thymaz.com/",
   SEO: SEO,
   theme: theme,
   links: {
-    facebook: "https://www.facebook.com/thymaz",
-    twitter: "https://twitter.com/maazelbeats",
+    facebook: "https://www.facebook.com/thymazoff",
+    twitter: "https://twitter.com/thymazoff",
     youtube: "https://www.youtube.com/channel/UCgrx0pyWluVXzOy45yWRJTw",
-    instagram: "https://www.instagram.com/maazelbeats/",
+    instagram: "https://www.instagram.com/thymazoff/",
     spotify:
       "https://open.spotify.com/artist/4w5LgUT6bfJnNq6wSFbND7?si=qUQb_vdlSB6XhBog780Hyg",
     appleMusic: "https://music.apple.com/artist/maazel/1148087232",
-    soundcloud: "https://soundcloud.com/maazelbeats",
+    soundcloud: "https://soundcloud.com/thymaz",
   },
 };
 

@@ -92,11 +92,15 @@ const Home = () => {
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
   const releasesRef = useRef(null);
+  const homeRef = useRef(null);
+  const shopRef = useRef(null);
 
   const refs = {
+    home: homeRef,
     about: aboutRef,
     releases: releasesRef,
     contact: contactRef,
+    //shop: shopRefs
   };
 
   return (
@@ -147,15 +151,11 @@ const Home = () => {
         </ReleasesContainer>
 
         <ListenNowButton
-          href={config.actionButtonUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          gradient
-        >
-          Listen more
+          href={config.actionButtonUrl} target="_blank" rel="noopener noreferrer" primary gradient>
+          LISTEN MORE
         </ListenNowButton>
       </Section>
-      <Title ref={aboutRef}>About Maazel</Title>
+      <Title ref={aboutRef}>ABOUT</Title>
       <Section>
         <Bio>{biography}</Bio>
         <Pictures>
@@ -171,7 +171,7 @@ const Home = () => {
           onClick={() => getEmail(config.reversedContactMail)}
         >
           <Button primary gradient>
-            Send an email
+            LET'S TALK
           </Button>
         </ContactMe>
       </Section>
