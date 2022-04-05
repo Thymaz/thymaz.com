@@ -1,13 +1,13 @@
 const SEO = {
   description:
-    "Behind Maazel lies a Paris based genre bending/multi-instrumentalist producer and DJ, mainly focusing on making emotional electronic music.",
+    "Thymaz is a French producer from Paris that makes electronic music, inspired by ambient sound, pop and house music trying to make people dance or chill out.",
   titleTemplate: "Thymaz | Official Website",
   additionalMetaTags: "",
   openGraph: {
     // what's displayed on social networks when sharing the website
     title: "Thymaz | Official Website",
     type: "website",
-    url: "https://maazelmusic.com/",
+    url: "https://thymaz.com/",
     site_name: "Thymaz",
     locale: "en_US",
     images: [
@@ -42,7 +42,7 @@ const config = {
   headerSize: "70px",
   footerSize: "70px",
   artistName: "Thymaz",
-  tagline: "Creating emotional music",
+  tagline: "Official Website",
   actionButtonLabel: "Listen Now",
   actionButtonUrl: "https://linktr.ee/thymaz",
   backgroundUrl: "background.jpg",
@@ -57,11 +57,11 @@ const config = {
   links: {
     facebook: "https://www.facebook.com/thymazoff",
     twitter: "https://twitter.com/thymazoff",
-    youtube: "https://www.youtube.com/channel/UCgrx0pyWluVXzOy45yWRJTw",
+    youtube: "https://www.youtube.com/channel/UCRSr35m3qa5CBHyd8SJbiXQ",
     instagram: "https://www.instagram.com/thymazoff/",
     spotify:
-      "https://open.spotify.com/artist/4w5LgUT6bfJnNq6wSFbND7?si=qUQb_vdlSB6XhBog780Hyg",
-    appleMusic: "https://music.apple.com/artist/maazel/1148087232",
+      "https://open.spotify.com/artist/2K9tlBARPJt7YCIzjWqQXC?si=oCnS5Xx3TzWKuQGnrXKd-A",
+    appleMusic: "https://music.apple.com/fr/artist/thymaz/1566147232",
     soundcloud: "https://soundcloud.com/thymaz",
   },
 };

@@ -118,7 +118,7 @@ const BarsMenu = styled.div`
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 30);
 
 const Header = ({ refs }) => {
-  const navigationList = ["home", "music","about", "shop"];
+  const navigationList = ["home", "music","about", "contact", "shop"];
   const [hidden, setHidden] = useState(true);
 
   return (
