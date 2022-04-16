@@ -26,11 +26,6 @@ const releases = [
     label: "Get The Sound",
     streamUrl: "https://AlterK.lnk.to/TrustYou",
     artworkUrl:
-<<<<<<< HEAD
-      "https://i1.sndcdn.com/artworks-Ihq1cn5zweQExhvQ-jVyvqw-t500x500.jpg",
-    audio:
-      "https://soundcloud.com/monstercat/so-sus-maazel-not-me-feat-madalen-duke",
-=======
       "https://i1.sndcdn.com/artworks-fMkHP7lMTYzBzFgz-pJzoGQ-t500x500.jpg",
     audio: "https://soundcloud.com/getthesound2/thymaz-trust-you",
   },
@@ -50,8 +45,7 @@ const releases = [
     year: "2021",
     label: "Get The Sound",
     streamUrl: "https://bfan.link/time-5",
-    artworkUrl:
-      "https://i1.sndcdn.com/artworks-I40omuysuQNZ-0-t500x500.jpg",
+    artworkUrl: "https://i1.sndcdn.com/artworks-I40omuysuQNZ-0-t500x500.jpg",
     audio: "https://soundcloud.com/thymaz-music/time",
   },
   {
@@ -83,7 +77,6 @@ const releases = [
     artworkUrl:
       "https://i1.sndcdn.com/artworks-MmzWaliOJ2PzLXsg-b98x3A-t500x500.jpg",
     audio: "https://soundcloud.com/thymaz/lonely-1",
->>>>>>> 30f6649a6119c539b754d21a544e6d8271275f5c
   },
 ];
 
