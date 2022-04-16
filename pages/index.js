@@ -92,16 +92,22 @@ const Home = () => {
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
   const releasesRef = useRef(null);
+  const musicRef = useRef(null);
+  const homeRef = useRef(null);
+  const shopRef = useRef(null);
 
   const refs = {
+    home: homeRef,
     about: aboutRef,
-    releases: releasesRef,
+    music: musicRef,
     contact: contactRef,
+    shop: shopRef
   };
 
   return (
     <Layout fullWidth title="Home" refs={refs}>
       <Section>
+      <Title ref={musicRef}>New Single</Title>
         <ReleaseCard release={releases[0]} big />
         <a
           href={releases[0].streamUrl}
@@ -147,23 +153,19 @@ const Home = () => {
         </ReleasesContainer>
 
         <ListenNowButton
-          href={config.actionButtonUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          gradient
-        >
-          Listen more
+          href={config.actionButtonUrl} target="_blank" rel="noopener noreferrer" primary gradient>
+          LISTEN MORE
         </ListenNowButton>
       </Section>
-      <Title ref={aboutRef}>About Maazel</Title>
+      <Title ref={aboutRef}>ABOUT</Title>
       <Section>
         <Bio>{biography}</Bio>
         <Pictures>
           <LazyLoad style={Pictures}>
-            <BioImg src={config.bioPicture1} alt="Maazel press picture" />
+            <BioImg src={config.bioPicture1} alt="Thymaz press picture" />
           </LazyLoad>
           <LazyLoad style={Pictures}>
-            <BioImg src={config.bioPicture2} alt="Maazel press picture" />
+            <BioImg src={config.bioPicture2} alt="Thymaz press picture" />
           </LazyLoad>
         </Pictures>
         <ContactMe
@@ -171,7 +173,7 @@ const Home = () => {
           onClick={() => getEmail(config.reversedContactMail)}
         >
           <Button primary gradient>
-            Send an email
+            LET'S TALK
           </Button>
         </ContactMe>
       </Section>
