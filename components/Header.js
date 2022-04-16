@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import styled from "styled-components";
+import Socials from "../components/Socials";
 
 const Container = styled.div`
   padding-top: 80px;
