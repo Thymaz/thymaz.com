@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import styled from "styled-components";
-import Socials from "../components/Socials";
+import { scrollToRef } from "../utils/utils";
 
 const Container = styled.div`
   padding-top: 80px;
@@ -13,6 +13,7 @@ const Container = styled.div`
   align-items: center;
   background-image: url("/background.png");
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100vh;
   color: ${(props) => props.theme.secondaryColor};
@@ -116,10 +117,8 @@ const BarsMenu = styled.div`
   }
 `;
 
-const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 30);
-
 const Header = ({ refs }) => {
-  const navigationList = ["home", "music","about", "contact", "shop"];
+  const navigationList = ["home", "music", "about", "contact", "shop"];
   const [hidden, setHidden] = useState(true);
 
   return (

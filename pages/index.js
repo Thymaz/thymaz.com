@@ -46,11 +46,7 @@ const Pictures = styled.div`
   justify-content: space-between;
   div {
     flex-basis: calc(50% - 4px);
-    height: 700px;
     flex-grow: 2;
-    @media only screen and (max-width: 600px) {
-      height: 250px;
-    }
     :first-child {
       margin-right: 5px;
     }
@@ -65,6 +61,10 @@ const BioImg = styled.img`
   width: 100%;
   object-fit: cover;
   filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.35));
+
+  @media only screen and (max-width: 600px) {
+    height: 250px;
+  }
 `;
 
 const ContactMe = styled.a`
@@ -101,13 +101,13 @@ const Home = () => {
     about: aboutRef,
     music: musicRef,
     contact: contactRef,
-    shop: shopRef
+    shop: shopRef,
   };
 
   return (
-    <Layout fullWidth title="Home" refs={refs}>
+    <Layout ref={homeRef} fullWidth title="Home" refs={refs}>
       <Section>
-      <Title ref={musicRef}>New Single</Title>
+        <Title ref={musicRef}>New Single</Title>
         <ReleaseCard release={releases[0]} big />
         <a
           href={releases[0].streamUrl}
@@ -153,7 +153,12 @@ const Home = () => {
         </ReleasesContainer>
 
         <ListenNowButton
-          href={config.actionButtonUrl} target="_blank" rel="noopener noreferrer" primary gradient>
+          href={config.actionButtonUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          primary
+          gradient
+        >
           LISTEN MORE
         </ListenNowButton>
       </Section>

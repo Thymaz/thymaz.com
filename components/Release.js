@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import LazyLoad from "react-lazyload";
-import { withSoundCloudAudio } from "react-soundplayer/addons";
 import styled from "styled-components";
 import { faPause, faPlay } from "@fortawesome/free-solid-svg-icons";
 import Button from "./Button";
@@ -105,7 +104,7 @@ const A = styled.a`
   color: ${(props) => props.theme.primaryColor};
 `;
 
-const CustomPlayer = withSoundCloudAudio((props) => {
+const CustomPlayer = (props) => {
   const { soundCloudAudio, playing, track } = props;
   const play = () => {
     if (playing) {
@@ -124,7 +123,7 @@ const CustomPlayer = withSoundCloudAudio((props) => {
       <Icon icon={playing ? faPause : faPlay} background={false} />
     </PlayerControls>
   );
-});
+};
 
 const ReleaseCard = (props) => {
   const { release, big } = props;
@@ -147,18 +146,9 @@ const ReleaseCard = (props) => {
               {release.presave ? "Pre-save" : "Stream"}
             </ActionButton>
           </a>
-          {!release.presave && (
-            <CustomPlayer
-              resolveUrl={release.audio}
-              clientId={"25a6312cd0379dbf2b4d8fce66d4f112"}
-            />
-          )}
         </Overlay>
       </Artwork>
       <Infos big={big}>
-        <A href={release.streamUrl} target="_blank" rel="noopener noreferrer">
-          <ReleaseTitle>{release.title}</ReleaseTitle>
-        </A>
         <span>{release.artist}</span>
         <ReleaseInfos>
           {release.label} - {release.year}

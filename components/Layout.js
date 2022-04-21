@@ -1,11 +1,14 @@
 import Head from "next/head";
+import { forwardRef } from "react";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
-import { normalize } from "polished";
 import { NextSeo } from "next-seo";
 import config from "../constants/config";
 
 import Header from "./Header";
 import Footer from "./Footer";
+import Icon from "../components/Icon";
+import { scrollToRef } from "../utils/utils";
+import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
 const GlobalStyles = createGlobalStyle`
   html { height: 100%; overflow:auto;
@@ -56,9 +59,19 @@ const Content = styled.div`
   }
 `;
 
-const Layout = ({ refs, ...props }) => {
+const ScrollToTopButton = styled.button`
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+`;
+
+const Layout = forwardRef(({ refs, ...props }, ref) => {
   return (
-    <div>
+    <div ref={ref}>
       <Head>
         <title>
           {config.htmlTitle} | {props.title}
@@ -101,10 +114,17 @@ const Layout = ({ refs, ...props }) => {
           <Header refs={refs} />
           <Content {...props}>{props.children}</Content>
           <Footer />
+          <ScrollToTopButton
+            onClick={() => {
+              scrollToRef(refs["home"]);
+            }}
+          >
+            <Icon icon={faAngleUp} />
+          </ScrollToTopButton>
         </Container>
       </ThemeProvider>
     </div>
   );
-};
+});
 
 export default Layout;
